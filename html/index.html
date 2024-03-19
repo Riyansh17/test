@@ -10,15 +10,34 @@
 </head>
 <body>
     <header>
-
+      <div class="topnav" id="myTopnav">
+        <a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+          function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
     </header>
     <section class="section1">
       <div class="slider-container">
         <div class="slider">
           <img src="/Pictures/1.png" alt="Image 1">
-          <img src="/Pictures/1.png" alt="Image 2">
-          <img src="/Pictures/1.png" alt="Image 3">
-          <img src="/Pictures/1.png" alt="Image 4">
+          <img src="/Pictures/2.png" alt="Image 2">
+          <img src="/Pictures/3.png" alt="Image 3">
+          <img src="/Pictures/4.png" alt="Image 4">
         </div>
       </div>
       <script src="/js/script.js"></script>
@@ -57,56 +76,86 @@
       <button>View More</button>
     </section>
     <section class="section4">
-      <div class="wrapper">
-        <i id="left" class="fa-solid fa-angle-left"></i>
-        <ul class="carousel">
-          <li class="card">
-            <div class="img"><img src="/Service/logistics.png" alt="img" draggable="false"></div>
-            <h2>logistics</h2>
-            <span>Sales Manager</span>
-          </li>
-          <li class="card">
-            <div class="img"><img src="/Service/wedding-arch.png" alt="img" draggable="false"></div>
-            <h2>Decor Management</h2>
-            <span>Web Developer</span>
-          </li>
-          <li class="card">
-            <div class="img"><img src="/Service/confetti.png" alt="img" draggable="false"></div>
-            <h2>Entertainment</h2>
-            <span>Online Teacher</span>
-          </li>
-          <li class="card">
-            <div class="img"><img src="/Service/pie-chart.png" alt="img" draggable="false"></div>
-            <h2>Budget Management</h2>
-            <span>Freelancer</span>
-          </li>
-          <li class="card">
-            <div class="img"><img src="/Service/hospitality.png" alt="img" draggable="false"></div>
-            <h2>Hospitality & Guest Management</h2>
-            <span>Bank Manager</span>
-          </li>
-          <li class="card">
-            <div class="img"><img src="/Service/fast-food.png" alt="img" draggable="false"></div>
-            <h2>Food & Beverage</h2>
-            <span>App Designer</span>
-          </li>
-          <li class="card">
-            <div class="img"><img src="/Service/giftbox.png" alt="img" draggable="false"></div>
-            <h2>Invitations & Gifting</h2>
-            <span>App Designer</span>
-          </li>
-          <li class="card">
-            <div class="img"><img src="/Service/destination.png" alt="img" draggable="false"></div>
-            <h2>Destination & Venues</h2>
-            <span>App Designer</span>
-          </li>
-          <li class="card">
-            <div class="img"><img src="/Service/food-stall.png" alt="img" draggable="false"></div>
-            <h2>Vendor Management</h2>
-            <span>App Designer</span>
-          </li>
-        </ul>
-        <i id="right" class="fa-solid fa-angle-right"></i>
+      <h2 style="text-align: center; color: #1b4388; margin: 50px 0 30px 0;  font-size: 2rem; font-weight: 600;">Services</h2>
+
+      <div class="box">
+        <div class="wrapper">
+          <i id="left" class="fa-solid fa-angle-left"></i>
+          <ul class="carousel">
+            <li class="card">
+              <!--<div class="img"><img src="/Service/logistics.png" alt="img" draggable="false"></div>-->
+              <h2>logistics</h2>
+              <span>In terms of logistics, our experts will assist you in determining the necessary 
+                transportation facilities for all of your visitors based on your budget and preferences. 
+                We ensure that your guests arrive on time and that our transportation services are absolutely 
+                on schedule. We'll make sure your event goes off without a hitch and as seamlessly as possible.</span>
+            </li>
+            <li class="card">
+              <!--<div class="img"><img src="/Service/wedding-arch.png" alt="img" draggable="false"></div>-->
+              <h2>Decor Management</h2>
+              <span>We know décor has the power to define your wedding and to reveal your personality and preferences, 
+                we create decor that reflects your ideas and preferences while remaining minimal and imaginative. 
+                Our decor experts specialize in designing, managing, and creating beautiful and elegant weddings. 
+                We provide our clients with innovative designs for weddings</span>
+            </li>
+            <li class="card">
+              <!--<div class="img"><img src="/Service/confetti.png" alt="img" draggable="false"></div>-->
+              <h2>Entertainment</h2>
+              <span>We all deserve a little entertainment at our wedding, 
+                but not everyone defines entertainment the same way, so whether it's live music, a DJ night, 
+                or a refined opera, we provide a variety of options. We offer professional DJs and bands for 
+                your wedding day. We have the perfect entertainment for your event</span>
+            </li>
+            <li class="card">
+              <!--<div class="img"><img src="/Service/pie-chart.png" alt="img" draggable="false"></div>-->
+              <h2>Budget Management</h2>
+              <span>While it is critical to immortalize your dream moments, particularly your wedding, 
+                which is one of the most auspicious and precious days of a person's life, it is also wise to 
+                keep your wedding budget well managed. We give you complete transparency helping you keep 
+                track of the costs and spending. We also help make a budget and stay on top of spending.r</span>
+            </li>
+            <li class="card">
+              <!--<div class="img"><img src="/Service/hospitality.png" alt="img" draggable="false"></div>-->
+              <h2>Hospitality</h2>
+              <span>In the stressful time leading up to the wedding, it's important to take care of your guests 
+                and make sure they're comfortable. With our specialized hospitality services, we go above and beyond 
+                to make everyone feel unique. Our team members ensure that every guest at your wedding is made to feel 
+                welcome</span>
+            </li>
+            <li class="card">
+              <!--<div class="img"><img src="/Service/fast-food.png" alt="img" draggable="false"></div>-->
+              <h2>Food & Beverage</h2>
+              <span>When you book a Destination Wedding with us, you don't have to worry about food and beverages
+                 since we take care of everything with our skilled chefs to provide you with a world-class culinary 
+                 experience.</span>
+            </li>
+            <li class="card">
+              <!--<div class="img"><img src="/Service/giftbox.png" alt="img" draggable="false"></div>-->
+              <h2>Invitations & Gifting</h2>
+              <span>Wedding invitations are a part of the tradition of weddings. 
+                They can be an expression of your love for your partner, your personality, and your style. 
+                Our Invitation and Gift Services help you personalize gifts and invitations to create that little extra effect 
+                in your wedding</span>
+            </li>
+            <li class="card">
+              <!--<div class="img"><img src="/Service/destination.png" alt="img" draggable="false"></div>-->
+              <h2>Destination & Venues</h2>
+              <span>A destination wedding is an ideal way to commemorate your love for one another and a perfect 
+                option for those who want to have a more intimate, stress-free wedding without having to plan every 
+                detail. Simply choose your ideal wedding venue, whether it is in your city or elsewhere, and allow us to take care
+                 of the rest.</span>
+            </li>
+            <li class="card">
+              <!--<div class="img"><img src="/Service/food-stall.png" alt="img" draggable="false"></div>-->
+              <h2>Vendor Management</h2>
+              <span>Planning a wedding is a lot of work, and it can be difficult to keep track of all the vendors and details.
+                 Our Wedding Vendor Management solution allows you to search for the best vendors for your specific needs. 
+                 We have some of the best vendors in each area, whether it's makeup artists, Mehendi artists, fireworks, 
+                 choreographers, or anything else</span>
+            </li>
+          </ul>
+          <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
       </div>
     </section>
     <footer></footer>
